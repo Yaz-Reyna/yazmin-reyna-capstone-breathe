@@ -1,3 +1,6 @@
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
 
 .main {
 
@@ -15,10 +18,31 @@
 
     &__title {
         margin: 0;
-        color: whitesmoke;
+        color: $dark-turquoise;
         align-self: center;
-        font-size: 4rem;
+        font-size: 4.5rem;
         line-height: 7rem;
+        animation: color-change-left-to-right 5s alternate infinite forwards;
+        transform: scaleY(1.8);
+        text-shadow: .25rem .25rem 1rem $black;
+    }
+
+    @keyframes color-change-left-to-right {
+        0%{
+            color: $dark-turquoise;
+        }
+        25%{
+            color: $medium-turquoise;
+        }
+        50%{
+            color: $light-turquoise;
+        }
+        75%{
+            color: $light-blue;
+        }
+        100%{
+            color: $white;
+        }
     }
 
     &__links-container{
@@ -26,12 +50,24 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        
 
         &--link{
-            padding-bottom: 1rem;
+            padding: .5rem;
             text-decoration: none;
             font-size: 1.5rem;
             color: whitesmoke;
+            font-weight: 300;
+            
         }
     }
+}
+
+.main__links-container--link:hover{
+    color: $light-blue;
+    box-shadow: .25rem .25rem 2rem $black;
+    font-weight: 400;
+    background-color: $medium-turquoise;
+    border-radius: 1.25rem;
+    
 }
