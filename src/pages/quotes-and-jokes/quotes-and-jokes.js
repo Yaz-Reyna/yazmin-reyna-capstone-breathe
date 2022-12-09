@@ -9,7 +9,6 @@ function QuotesAndJokes() {
         <>
             <Header/>
             <main className='main-section'>
-            
                 <div>
                     <Quotes/>
                 </div>
@@ -17,7 +16,6 @@ function QuotesAndJokes() {
                 <div>
                     <Jokes/>
                 </div>
-
             </main>
         </>
     )
