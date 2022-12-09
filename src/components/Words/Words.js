@@ -1,10 +1,10 @@
-
-function Words() {
+import './Words.scss';
+function Quotes() {
     return(
-        <section>
+        <section className='quotes'>
 
         </section>
     )
 }
 
-export default Words;
+export default Quotes;

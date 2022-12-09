@@ -2,7 +2,7 @@
 import './App.scss';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import HomePage from './pages/home/home';
-import WordsEncouragement from './pages/words-encouragement/words-encouragement';
+import QuotesAndJokes from './pages/quotes-and-jokes/quotes-and-jokes';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Route path='/' element={<HomePage/>}></Route>
         {/* <Route path='/exercises' element={<Exercises/>}></Route> */}
         {/* <Route path='/music' element={<Music/>}></Route> */}
-        <Route path='/words' element={<WordsEncouragement/>}></Route>
+        <Route path='/words' element={<QuotesAndJokes/>}></Route>
       </Routes>
     </BrowserRouter>
   );

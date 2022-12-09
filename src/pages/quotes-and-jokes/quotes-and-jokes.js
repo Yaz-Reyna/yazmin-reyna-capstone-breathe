@@ -1,14 +1,14 @@
-import './words-encouragement.scss';
+import './quotes-and-jokes.scss';
 import Jokes from '../../components/Jokes/Jokes'
-import Words from '../../components/Words/Words'
+import Quotes from '../../components/Words/Words'
 
-function WordsEncouragement() {
+function QuotesAndJokes() {
 
     return(
-        <main className='main'>
+        <main className='main-section'>
             
                 <div>
-                    <Words/>
+                    <Quotes/>
                 </div>
                     
                 <div>
@@ -19,4 +19,4 @@ function WordsEncouragement() {
     )
 }
 
-export default WordsEncouragement;
+export default QuotesAndJokes;

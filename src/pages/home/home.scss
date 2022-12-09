@@ -6,7 +6,7 @@
 
     height: 100vh;
     width: 100vw;
-    background-image: url("../../assets/images/home-background.jpg");
+    background-image: url("../../assets/images/feather.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,26 +22,32 @@
         align-self: center;
         font-size: 4.5rem;
         line-height: 7rem;
-        animation: color-change-left-to-right 5s alternate infinite forwards;
-        transform: scaleY(1.8);
+        font-weight: 700;
+        animation: breathe 5s alternate infinite forwards;
+        transform: scaleY(1.6);
         text-shadow: .25rem .25rem 1rem $black;
     }
 
-    @keyframes color-change-left-to-right {
+    @keyframes breathe {
         0%{
             color: $dark-turquoise;
+            transform: scaleY(1.6);
         }
         25%{
             color: $medium-turquoise;
+            transform: scaleY(1.7);
         }
         50%{
             color: $light-turquoise;
+            transform: scaleY(1.8);
         }
         75%{
             color: $light-blue;
+            transform: scaleY(1.7);
         }
         100%{
             color: $white;
+            transform: scaleY(1.6);
         }
     }
 
