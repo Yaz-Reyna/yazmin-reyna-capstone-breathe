@@ -2,78 +2,80 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
-.main {
+.main-background {
+    animation: slide 15s ease-in-out infinite alternate;
+    background-image: linear-gradient(-70deg, $medium-pink 50%, $light-turquoise 50%);
+    bottom:0;
+    top:0;
+    left:-50%;
+    right:-50%;
+    opacity:.4;
+    position:fixed;
+    z-index:-1;
+}
 
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../assets/images/feather.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.background-2 {
+    animation-direction:alternate-reverse;
+    animation-duration:8s;
+}
+
+.background-3 {
+    animation-duration:10s;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+.main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1.25rem;
+    box-shadow:0 0 1rem $black(0,0,0,.25);
+    left:50%;
+    top:50%;
     padding: 1rem;
-    justify-content: space-between;
-    
+    position:fixed;
+    text-align:center;
+    transform:translate(-50%, -50%);
 
     &__title {
         margin: 0;
-        color: $dark-turquoise;
+        color: $medium-turquoise;
         align-self: center;
-        font-size: 4.5rem;
-        line-height: 7rem;
+        font-size: 4rem;
         font-weight: 700;
-        animation: breathe 5s alternate infinite forwards;
-        transform: scaleY(1.6);
-        text-shadow: .25rem .25rem 1rem $black;
     }
 
-    @keyframes breathe {
-        0%{
-            color: $dark-turquoise;
-            transform: scaleY(1.6);
-        }
-        25%{
-            color: $medium-turquoise;
-            transform: scaleY(1.7);
-        }
-        50%{
-            color: $light-turquoise;
-            transform: scaleY(1.8);
-        }
-        75%{
-            color: $light-blue;
-            transform: scaleY(1.7);
-        }
-        100%{
-            color: $white;
-            transform: scaleY(1.6);
-        }
-    }
-
-    &__links-container{
-        margin-bottom: 3rem;
+    &__links-container {
+        padding: .5rem;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        
+        gap: 1rem;
 
-        &--link{
-            padding: .5rem;
+        &--link {
             text-decoration: none;
             font-size: 1.5rem;
-            color: whitesmoke;
-            font-weight: 300;
-            
+            color: $medium-pink;
+            font-weight: 400;
         }
     }
 }
 
 .main__links-container--link:hover{
     color: $light-blue;
-    box-shadow: .25rem .25rem 2rem $black;
+    box-shadow: .25rem .25rem 1rem $black;
     font-weight: 400;
     background-color: $medium-turquoise;
     border-radius: 1.25rem;
+    padding: .5rem;
     
 }

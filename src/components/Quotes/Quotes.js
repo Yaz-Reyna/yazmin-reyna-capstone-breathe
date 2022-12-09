@@ -1,4 +1,4 @@
-import './Words.scss';
+import './Quotes.scss';
 function Quotes() {
     return(
         <section className='quotes'>

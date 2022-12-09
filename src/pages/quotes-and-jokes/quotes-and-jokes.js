@@ -1,11 +1,14 @@
 import './quotes-and-jokes.scss';
-import Jokes from '../../components/Jokes/Jokes'
-import Quotes from '../../components/Words/Words'
+import Jokes from '../../components/Jokes/Jokes';
+import Quotes from '../../components/Quotes/Quotes';
+import Header from "../../components/Header/Header.js";
 
 function QuotesAndJokes() {
 
     return(
-        <main className='main-section'>
+        <>
+            <Header/>
+            <main className='main-section'>
             
                 <div>
                     <Quotes/>
@@ -15,7 +18,8 @@ function QuotesAndJokes() {
                     <Jokes/>
                 </div>
 
-        </main>
+            </main>
+        </>
     )
 }
 
