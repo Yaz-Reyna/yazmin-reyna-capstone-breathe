@@ -1,4 +1,4 @@
-import logo from "../../assets/logo/logo-cursive.png";
+import logo from "../../assets/logo/turquoise-logo.png";
 import '../Header/Header.scss';
 import {NavLink} from "react-router-dom";
 
