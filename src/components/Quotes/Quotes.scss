@@ -25,24 +25,16 @@
             @include curved-top-button
         }
     }
-
-    &__jokes-container {
-        border-bottom: 1px solid $medium-pink;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        &--title {
-            text-align: center;
-            font-weight: 400;
-            color: $dark-gray;
-        }
-
-        &--button {
-            margin-bottom: 1rem;
-            @include curved-top-button
-        }
-    }
 }
 
-    
+.qj-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1rem;
+
+    &__label{
+        display: flex;
+    flex-direction: column;
+    }
+} 

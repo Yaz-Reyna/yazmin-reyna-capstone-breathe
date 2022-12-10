@@ -2,6 +2,7 @@ import './quotes-and-jokes.scss';
 import Jokes from '../../components/Jokes/Jokes';
 import Quotes from '../../components/Quotes/Quotes';
 import Header from "../../components/Header/Header.js";
+import CommentsForm from '../../components/CommentsForm/CommentsForm';
 
 function QuotesAndJokes() {
 
@@ -12,9 +13,13 @@ function QuotesAndJokes() {
                 <div>
                     <Quotes/>
                 </div>
-                    
+                
                 <div>
                     <Jokes/>
+                </div>
+                
+                <div>
+                    <CommentsForm/>
                 </div>
             </main>
         </>
