@@ -8,18 +8,41 @@
     flex-direction: column;
     align-items: center;
 
-    &__title {
-        text-align: center;
-        font-weight: 400;
-        color: $dark-gray;
+    &__quotes-container {
+        border-bottom: 1px solid $medium-pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            text-align: center;
+            font-weight: 400;
+            color: $dark-gray;
+        }
+
+        &--button {
+            margin-bottom: 1rem;
+            @include curved-top-button
+        }
     }
 
-    &__button {
-        width: 15rem;
-        height: 20rem;
-        border-top-left-radius: 8rem;
-        border-top-right-radius: 8rem;
-        background-color: $medium-pink;
-        border: none;
+    &__jokes-container {
+        border-bottom: 1px solid $medium-pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            text-align: center;
+            font-weight: 400;
+            color: $dark-gray;
+        }
+
+        &--button {
+            margin-bottom: 1rem;
+            @include curved-top-button
+        }
     }
 }
+
+    

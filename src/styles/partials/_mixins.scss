@@ -17,3 +17,18 @@ $desktop-breakpoint: 1280px;
         @content;
     }
 }
+
+/* Styles */
+@mixin curved-top-button {
+    width: 15rem;
+    height: 20rem;
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+    background-color: $medium-pink;
+    border: none;
+    font-size: 1em;
+    padding: 1.5rem;
+    color: $white;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+}
