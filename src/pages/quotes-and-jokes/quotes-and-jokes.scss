@@ -1,0 +1,17 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.main-section {
+    padding: 1rem;
+
+    @include tablet {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include desktop {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}

@@ -32,3 +32,9 @@ $desktop-breakpoint: 1280px;
     font-family: 'Source Sans Pro';
     font-weight: 400;
 }
+
+@mixin section-title {
+    text-align: center;
+    font-weight: 400;
+    color: $dark-gray;
+}

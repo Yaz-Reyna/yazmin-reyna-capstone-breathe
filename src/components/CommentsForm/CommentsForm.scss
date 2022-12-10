@@ -1,3 +1,74 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__title {
+        @include section-title;
+    }
+
+    &__qj-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        &--label{
+            display: flex;
+            flex-direction: column;
+            color: $dark-gray;
+            font-size: .75rem;
+            gap: .3125rem;
+        }
+
+        &__input {
+            background-color: $gray;
+            border: none;
+            border-radius: .5rem;
+            padding: .5rem;
+
+            &--name {
+                height: 2rem;
+            }
+
+            &--comment {
+                height: 7rem;
+            }
+        }
+
+        &__button{
+            background-color: $gray;
+            border: none;
+            border-radius: .5rem;
+            padding: .5rem;
+            color: $dark-turquoise;
+            font-size: .8125rem;
+            font-family: 'Source Sans Pro';
+            font-size: .875rem;
+            font-weight: 600;
+            box-shadow: .25rem .25rem .5rem;
+        }
+    }
+
+    
+} 
+
+.comments__qj-form__input::placeholder {
+    color: $dark-turquoise;
+    font-size: .8125rem;
+    font-family: 'Source Sans Pro';
+}
+
+.comments__qj-form__input:focus {
+    outline: none;
+    border: .125rem solid $pink;
+}
+
+.comments__qj-form__button:hover {
+    background-color: $medium-pink;
+}
