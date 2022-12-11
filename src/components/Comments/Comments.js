@@ -17,22 +17,29 @@ function Comments () {
 
     return (
         <section className="comments-section">
-        {commentsArr.map((comment) => {
-            return (
-                <div className="comments-section__comment-container" key={comment.id}>
+        {/* {commentsArr.map((comment) => { */}
+            {/* return ( */}
+                <div className="comments-section__comment-container" >
+                {/* key={comment.id} */}
                     <div className="comments-section__blue-avatar-container">
                         <div className="comments-section__blue-avatar"></div>
                     </div>
                     <div className="comments-section__comment-info-container">
                         <div className="comments-section__name-date-container" >
-                            <p className="comments-section__name-date-container--name">{comment.name}</p>
-                            <p className="comments-section__name-date-container--date">{comment.date}</p>
+                            <p className="comments-section__name-date-container--name">
+                                {/* {comment.name} */}
+                                </p>
+                            <p className="comments-section__name-date-container--date">
+                                {/* {comment.date} */}
+                                </p>
                         </div>
-                        <p className="comments-section__comment-info-container--comment">{comment.comment}</p>
+                        <p className="comments-section__comment-info-container--comment">
+                            {/* {comment.comment} */}
+                            </p>
                     </div>
                 </div>
-            )
-        })}
+            {/* ) */}
+        {/* })} */}
 </section>
     )
 }

@@ -24,7 +24,8 @@
     &__links-container {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+        gap: 1rem;
         
 
         &--left{
@@ -44,10 +45,10 @@
         &--link{
             text-decoration: none;
             color: $pink;
-            width: 8rem;
+            width: 8.5rem;
             background-color: $gray;
             border-radius: .625rem;
-            padding: .2rem;
+            padding: .3rem;
             text-align: center;
         }
     
