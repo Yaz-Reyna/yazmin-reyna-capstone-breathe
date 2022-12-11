@@ -27,7 +27,7 @@ function CommentsForm() {
     }
 
     return (
-        <main className='comments'>
+        <section className='comments'>
             <h2 className='comments__title'>Leave us a comment</h2>
             <form className='comments__qj-form'  onSubmit={handleSubmit} ref={formRef}>
                 <label className='comments__qj-form--label' htmlFor="name">
@@ -51,9 +51,8 @@ function CommentsForm() {
                     <button type='submit' className='comments__qj-form__buttons-container--add'>Submit </button>
                     <button type="button" className='comments__qj-form__buttons-container--cancel'onClick={handleCancel}>Cancel</button>
                 </div>
-                
             </form>
-        </main>
+        </section>
     
     )
 }
