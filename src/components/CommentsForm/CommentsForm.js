@@ -7,7 +7,8 @@ function CommentsForm() {
     const formRef = useRef();
     const [postComment, setPostComment] = useState([]);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
         const newComment = {
             name: formRef.current.name.value,
@@ -19,11 +20,14 @@ function CommentsForm() {
             setPostComment(postComment.concat(res.data))
         })
         formRef.current.reset();
-        
-
     }
+
+    const handleCancel = () => {
+        formRef.current.reset();
+    }
+
     return (
-        <section className='comments'>
+        <main className='comments'>
             <h2 className='comments__title'>Leave us a comment</h2>
             <form className='comments__qj-form'  onSubmit={handleSubmit} ref={formRef}>
                 <label className='comments__qj-form--label' htmlFor="name">
@@ -43,9 +47,13 @@ function CommentsForm() {
                     placeholder='Write your comment here'>
                     </textarea>
                 </label>
-                <button className='comments__qj-form__button'>Submit</button>
+                <div className='comments__qj-form__buttons-container'>
+                    <button type='submit' className='comments__qj-form__buttons-container--add'>Submit </button>
+                    <button type="button" className='comments__qj-form__buttons-container--cancel'onClick={handleCancel}>Cancel</button>
+                </div>
+                
             </form>
-        </section>
+        </main>
     
     )
 }

@@ -38,3 +38,16 @@ $desktop-breakpoint: 1280px;
     font-weight: 400;
     color: $dark-gray;
 }
+
+@mixin qj-form-mobile-button {
+    background-color: $gray;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: .8125rem;
+    font-family: 'Source Sans Pro';
+    font-size: .875rem;
+    font-weight: 600;
+    box-shadow: .25rem .25rem .5rem;
+    width: 40%;
+}

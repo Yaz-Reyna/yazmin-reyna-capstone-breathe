@@ -41,21 +41,24 @@
             }
         }
 
-        &__button{
-            background-color: $gray;
-            border: none;
-            border-radius: .5rem;
-            padding: .5rem;
-            color: $dark-turquoise;
-            font-size: .8125rem;
-            font-family: 'Source Sans Pro';
-            font-size: .875rem;
-            font-weight: 600;
-            box-shadow: .25rem .25rem .5rem;
+        &__buttons-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            border-bottom: 1px solid $medium-pink;
+            padding-bottom: 1rem;
+
+            &--add {
+                @include qj-form-mobile-button;
+                color: $dark-turquoise;
+            }
+
+            &--cancel {
+                @include qj-form-mobile-button;
+                color: $medium-pink;
+            }
         }
     }
-
-    
 } 
 
 .comments__qj-form__input::placeholder {
