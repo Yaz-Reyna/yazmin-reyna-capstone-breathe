@@ -1,5 +1,6 @@
+import Header from "../../components/Header/Header.js";
 import ExerciseOne from "../../components/ExerciseOne/ExerciseOne";
-import Header from "../../components/Header/Header";
+
 import "./breathing-exercises.scss";
 
 function BreathingExercises() {

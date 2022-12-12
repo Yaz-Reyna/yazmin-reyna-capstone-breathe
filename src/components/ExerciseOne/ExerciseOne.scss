@@ -1,0 +1,128 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.breathe1 {
+    padding: 1rem;
+    margin: 0;
+
+    &__title {
+        @include section-title;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 16rem;
+        width: 100%;
+        margin-right: 0;
+
+        &--in-out{
+            border: none;
+            background-color: $darkest-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: $dark-turquoise;
+            margin: 0;
+            border-radius: .625rem;
+            box-shadow: .25rem .25rem .5rem $dark-gray;
+            width: 12rem;
+            height: 12rem;
+        }
+
+        &--play-animation {
+            animation: breathe-in-out 10s linear infinite;
+            background-color: $darkest-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: $dark-turquoise;
+            margin: 0;
+            border-radius: .625rem;
+            box-shadow: .25rem .25rem .5rem $dark-gray;
+        }
+
+
+        @keyframes breathe-in-out {
+            0%{
+                width: 50%;
+                height: 50%;
+                background-color: $darkest-gray;
+            }
+            25%{
+                width: 75%;
+                height: 75%;
+                background-color: $dark-gray;
+            }
+            50%{
+                width: 100%;
+                height: 100%;
+                background-color: $pink;
+            }
+            75%{
+                width: 75%;
+                height: 75%;
+                background-color: $medium-pink;
+            }
+            100%{
+                width: 50%;
+                height: 50%;
+                background-color: $light-pink;
+            }
+        }
+
+            &__instructions{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .breathe1__container--in-out__instructions--play-animation:after{
+                    animation: breathing-instructions 10s linear infinite;
+                    content: "Breathe in";
+                    display: block;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-shadow: .25rem .25rem .5rem $white;
+                }
+            @keyframes breathing-instructions {
+                0%{
+                    content: "Breathe in";
+                    color: $dark-turquoise;
+                    font-size: 1.5rem;
+                }
+                25%{
+                    content: "Breathe in";
+                    color: $dark-turquoise;
+                    font-size: 2rem;
+                }
+                50%{
+                    content: "Breathe in";
+                    color: $dark-turquoise;
+                    font-size: 3rem;
+                }
+
+                60%{
+                    content: "Breathe out";
+                    color: $dark-gray;
+                    font-size: 2.5rem;
+                }
+
+                80%{
+                    content: "Breathe out";
+                    color: $dark-gray;
+                    font-size: 2rem;
+                }
+                100%{
+                    content: "Breathe out";
+                    color: $dark-gray;
+                    font-size: 1.4rem;
+                }
+            }
+
+    }
+}
