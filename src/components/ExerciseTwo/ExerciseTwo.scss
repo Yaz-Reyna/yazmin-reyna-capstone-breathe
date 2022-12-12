@@ -1,0 +1,42 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+
+.breathe2 {
+    margin: 0;
+
+    &__container {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+
+        &--inhale{
+            animation: color-change 9s linear;
+        }
+
+        &--hold {
+            animation: color-change 9s linear;
+            animation-delay: 3s;
+        }
+
+        &--exhale {
+            animation: color-change 9s linear;
+            animation-delay: 6s;
+        }
+    }
+}
+
+
+@keyframes color-change {
+    0% {
+        color: $pink;
+    }
+    33% {
+        color: $dark-turquoise;
+    }
+    66% {
+        color: $pink;
+    }
+}
+

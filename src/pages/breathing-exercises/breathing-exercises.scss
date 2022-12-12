@@ -1,0 +1,10 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.main-breathing {
+    padding: 1rem;
+    &__title {
+    @include section-title;
+    }
+}

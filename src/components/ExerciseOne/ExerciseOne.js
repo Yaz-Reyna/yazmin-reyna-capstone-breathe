@@ -10,7 +10,6 @@ function ExerciseOne () {
 
     return (
         <section className="breathe1">
-            <h2 className="breathe1__title">Click on any of the shapes!</h2>
             <div className="breathe1__container">
                 <button className= {`breathe1__container--in-out ${isPlaying ? 'breathe1__container--play-animation' : "" }`} 
                 onClick={handleClick}>
