@@ -7,25 +7,77 @@ $ease:ease-in-out;
 
 .breathe3{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
 
     &__button{
-    width:17rem;
+    width:16rem;
     height: 25rem;
+    padding: 0;
     position: relative;
+    border: none;
+    border-radius: .625rem;
+    align-self: center;
+    animation-name: spin;
 
-    &--inhale {
+    .breathe3__button--inhale__play-animation:after{
         position: absolute;
         top: 1rem;
         left:45%;
         font-size: 1rem;
         color: $darkest-gray;
+        content: "Inhale";
+        animation: text-grow 10s linear infinite;
     }
 
-    &--exhale {
-        position: absolute;
-        bottom: 1rem;
-        left:45%;
+    @keyframes text-grow {
+        0%{
+            content: "Inhale";
+            color: $dark-turquoise;
+            font-size: 1rem;
+        }
+        25%{
+            content: "Inhale";
+            color: $dark-turquoise;
+            font-size: 1.2rem;
+        }
+        50%{
+            content: "Inhale";
+            color: $dark-turquoise;
+            font-size: 1.4rem;
+        }
+
+        55%{
+            content: "Exhale";
+            color: $dark-turquoise;
+            font-size: 1.3rem;
+        }
+
+        65%{
+            content: "Exhale";
+            color: $dark-gray;
+            font-size: 1.2rem;
+        }
+
+        75%{
+            content: "Exhale";
+            color: $dark-gray;
+            font-size: 1.2rem;
+        }
+
+        80%{
+            content: "Exhale";
+            color: $dark-gray;
+            font-size: 1.1rem;
+        }
+        100%{
+            content: "Exhale";
+            color: $dark-gray;
+            font-size: 1rem;
+        }
     }
 
     .circle{
@@ -35,6 +87,7 @@ $ease:ease-in-out;
         left:50%;
         transform:translateX(-50%);
         transform-origin:bottom center;
+        
     }
 
     @for $i from 1 through 16{

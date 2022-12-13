@@ -4,7 +4,22 @@
 
 .main-breathing {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
     &__title {
     @include section-title;
+    }
+
+    &__one {
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    &__three {
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 3rem;
     }
 }
