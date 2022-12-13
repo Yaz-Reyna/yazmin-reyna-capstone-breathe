@@ -24,8 +24,8 @@ function Comments () {
 
                 return (
                 <div className="comments-section__comment-container" key={comment.id} >
-                    <div className="comments-section__blue-avatar-container">
-                        <div className="comments-section__blue-avatar"></div>
+                    <div className="comments-section__pink-avatar-container">
+                        <div className="comments-section__pink-avatar"></div>
                     </div>
                     <div className="comments-section__comment-info-container">
                         <div className="comments-section__name-date-container" >

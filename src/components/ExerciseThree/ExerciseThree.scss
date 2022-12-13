@@ -1,0 +1,64 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+$duration:20s;
+$ease:ease-in-out;
+
+.breathe3{
+    display: flex;
+    justify-content: center;
+
+    &__button{
+    width:17rem;
+    height: 25rem;
+    position: relative;
+
+    &--inhale {
+        position: absolute;
+        top: 1rem;
+        left:45%;
+        font-size: 1rem;
+        color: $darkest-gray;
+    }
+
+    &--exhale {
+        position: absolute;
+        bottom: 1rem;
+        left:45%;
+    }
+
+    .circle{
+        border-radius:100% 100% 0 0;
+        position: absolute;
+        bottom: 50%;
+        left:50%;
+        transform:translateX(-50%);
+        transform-origin:bottom center;
+    }
+
+    @for $i from 1 through 16{
+        .circle:nth-child(#{$i}){
+            $size:0;
+            @if($i > 1){
+                $size:1rem * ($i - 1);
+                border:.5rem solid $pink;
+            }@else{
+                $size:1rem;
+                background:$pink;
+            }
+            border-bottom:none;
+            border-radius:$size $size 0 0;
+            width:$size;
+            height:$size / 2;
+            z-index: 16 - $i;
+            animation: circle-#{$i} $duration infinite $ease;
+            }
+
+        @keyframes circle-#{$i}{
+            0%{transform:translateX(-50%) rotate(0deg);}
+            100%{transform:translateX(-50%) rotate(-($i * 360deg));}
+        }
+    }
+}
+}

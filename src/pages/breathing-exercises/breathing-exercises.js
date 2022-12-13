@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header.js";
 import ExerciseOne from "../../components/ExerciseOne/ExerciseOne";
 import ExerciseTwo from "../../components/ExerciseTwo/ExerciseTwo.js";
-
+import ExerciseThree from "../../components/ExerciseThree/ExerciseThree.js";
 import "./breathing-exercises.scss";
 
 function BreathingExercises() {
@@ -14,8 +14,11 @@ function BreathingExercises() {
                 <div>
                     <ExerciseOne/>
                 </div>
-                <div>
+                {/* <div>
                     <ExerciseTwo/>
+                </div> */}
+                <div>
+                    <ExerciseThree/>
                 </div>
             </main>
         </>
