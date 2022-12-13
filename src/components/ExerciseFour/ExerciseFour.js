@@ -1,30 +1,24 @@
 import "./ExerciseFour.scss";
-import {useState} from 'react';
-import inhale from "../../assets/images/inhale.png";
-import exhale from "../../assets/images/exhale.png"
+import { useState } from 'react';
 
-function ExerciseThree () {
+
+function ExerciseFour() {
+
     const [isPlaying, setIsPlaying] = useState(false)
 
     const handleClick = () => {
-        setIsPlaying(true)
-    }
+        setIsPlaying(true);
+    };
 
-return ( 
-
-
-<section className="breathe4">
-
-    <button className= {`breathe4__button ${isPlaying ? 'breathe4__button--play-animation' : ""}`} onClick={handleClick}>
-        <div>
-            <img src={inhale} alt="Inhale" />
-        </div>
-        <div>
-            <img src={exhale} alt="Exhale" />
-        </div>
-    </button>
-</section>
+    return (
+        <section className="breathe4">
+            <button className="breathe4__button" onClick={handleClick}>
+                <div className={`breathe4__button__circle ${isPlaying ? 'breathe4__button__circle--play-animation' : ''}`} onClick={handleClick}></div>
+                <p className= {`breathe4__button__text ${isPlaying ? 'breathe4__button__text--play-animation' : ""}`} 
+                onClick={handleClick}>
+                </p>
+            </button>
+        </section>
     )
-}
-
-export default ExerciseThree;
+};
+export default ExerciseFour;

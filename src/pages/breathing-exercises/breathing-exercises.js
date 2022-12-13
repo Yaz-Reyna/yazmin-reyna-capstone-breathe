@@ -2,6 +2,7 @@ import Header from "../../components/Header/Header.js";
 import ExerciseOne from "../../components/ExerciseOne/ExerciseOne";
 import ExerciseTwo from "../../components/ExerciseTwo/ExerciseTwo.js";
 import ExerciseThree from "../../components/ExerciseThree/ExerciseThree.js";
+import ExerciseFour from "../../components/ExerciseFour/ExerciseFour.js";
 import "./breathing-exercises.scss";
 
 function BreathingExercises() {
@@ -19,6 +20,10 @@ function BreathingExercises() {
                 </div> */}
                 <div className="main-breathing__one">
                     <ExerciseThree/>
+                </div>
+
+                <div className="main-breathing__one">
+                    <ExerciseFour/>
                 </div>
             </main>
         </>
