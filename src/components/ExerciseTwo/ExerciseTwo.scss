@@ -5,6 +5,7 @@
 
 .breathe2 {
     margin: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,8 +13,10 @@
 
     &__button {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        justify-content: space-evenly;
         border: none;
         border-radius: 0.625rem;
         width: 16rem;
@@ -21,25 +24,53 @@
         box-shadow: 0.25rem 0.25rem 0.5rem $dark-gray;
         background-color: $darkest-gray;
 
+        &__circle-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         &--circle {
             border-radius: 50%;
             background: transparent;
             width: 7rem;
             height: 7rem;
+            
         }
 
         &--inhale {
-            margin: 2rem;
-            font-size: 2rem;
-            align-self: flex-start;
-        }
-
-        &--exhale {
-            margin: 2rem;
-            font-size: 2rem;
-            align-self: flex-end;
+            display: none;
+        
         }
     }
+
+    .in-play {
+        display: contents;
+        margin: 1rem;
+        font-size: 2rem;
+        align-self: flex-start;
+        text-shadow: inset -0.25rem -0.3125rem .625rem $light-pink;
+        animation: in 8s ease-in-out infinite;
+        color: $light-pink;
+    }
+
+    @keyframes in {
+        0% {
+            opacity: 0;
+            
+          }
+          50% {
+            color: $medium-pink;
+            opacity: 1;
+
+           
+          }
+          100% {
+            color: $light-pink;
+            opacity: 0;
+          }
+        
+    }
+
     
     .pink {
         box-shadow:
@@ -48,7 +79,7 @@
             inset -0.125rem 0 .625rem $medium-pink,
             .0625rem .0625rem .0625rem .0625rem $medium-pink,
             .125rem 0 .625rem $gray;
-            animation: move-right 6s ease-in-out infinite;
+            animation: move-right 8s ease-in-out infinite;
     }
 
     .turquoise {
@@ -58,7 +89,7 @@
             inset -0.125rem 0 .625rem $medium-turquoise,
             .0625rem .0625rem .0625rem .0625rem $medium-turquoise,
             .125rem 0 .625rem $gray;
-            animation: move-left 6s ease-in-out infinite;
+            animation: move-left 8s ease-in-out infinite;
     }
 
     @keyframes move-right {
