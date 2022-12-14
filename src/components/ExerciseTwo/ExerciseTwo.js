@@ -9,7 +9,7 @@ function ExerciseTwo () {
     const handleClick = () => {
         setIsPlaying(true)
         
-        const timer = setInterval(() => {
+        const  timer = setInterval (() => {
             setShowText(prevIndex => (prevIndex === 0 ? 1 :0));
         }, 4000);
     }
@@ -17,18 +17,15 @@ function ExerciseTwo () {
     const texts = ["Inhale", "Exhale"];
 
 return ( 
-
-
-<section className="breathe2">
-    <button className="breathe2__button" onClick={handleClick}>
-        <p className={`breathe2__button--inhale ${isPlaying ? 'in-play' : ""}`}>{texts[showText]}</p>
-        <div className="breathe2__button__circle-container">
-            <div className={`breathe2__button--circle ${isPlaying ? 'pink' : ""}`} ></div>
-            <div className={`breathe2__button--circle ${isPlaying ? 'turquoise' : ""}`}></div>
-        </div>
-    </button>
-    
-</section>
+    <section className="breathe2">
+        <button className="breathe2__button" onClick={handleClick}>
+            <p className={`breathe2__button--inhale ${isPlaying ? 'in-play' : ""}`}>{texts[showText]}</p>
+            <div className="breathe2__button__circle-container">
+                <div className={`breathe2__button--circle ${isPlaying ? 'pink' : ""}`} ></div>
+                <div className={`breathe2__button--circle ${isPlaying ? 'turquoise' : ""}`}></div>
+            </div>
+        </button>
+    </section>
     )
 }
 
