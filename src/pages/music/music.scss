@@ -10,11 +10,25 @@
     width: 100vw;
     height: 100vh;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+
+    @include tablet {
+        padding: 0rem 2rem;
+    }
+
+    @include desktop {
+        padding: 0rem 8rem;
+    }
+
 
     &__message {
         text-align: center;
         color: $dark-turquoise;
+        margin-top: 6rem;
         text-shadow: .25rem .25rem 2rem $light-pink;
+        width: 60%;
     }
 
 }
