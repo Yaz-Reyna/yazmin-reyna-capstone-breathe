@@ -20,8 +20,14 @@
 
         &--button {
             margin-bottom: 1rem;
-            @include curved-top-button
+            font-size: 1rem;
+            text-overflow: ellipsis;
+            @include curved-top-button;
+            @media (text-overflow: ellipsis) {
+                font-size: .5rem;
+            }
         }
+
     }
 }
 

@@ -6,7 +6,15 @@
     background-image: url(../../assets/images/layered-waves.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 100vw;
-    height: 100hw;
+    height: 100vh;
+    padding: 1rem;
+
+    &__message {
+        text-align: center;
+        color: $dark-turquoise;
+        text-shadow: .25rem .25rem 2rem $light-pink;
+    }
 
 }
