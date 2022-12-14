@@ -13,6 +13,11 @@
         padding-right: 2rem
     }
 
+    @include desktop {
+        padding-left: 6rem;
+        padding-right: 6rem
+    }
+
     &__title {
     @include section-title;
     @include tablet {

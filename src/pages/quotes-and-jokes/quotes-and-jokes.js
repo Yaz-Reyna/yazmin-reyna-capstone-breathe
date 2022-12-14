@@ -11,21 +11,27 @@ function QuotesAndJokes() {
         <>
             <Header/>
             <main className='main-section'>
-                <div>
-                    <Quotes/>
-                </div>
-                
-                <div>
-                    <Jokes/>
-                </div>
-                
-                <div>
-                    <CommentsForm/>
-                </div>
 
-                <div>
-                    <Comments/>
+                <div className='main-section__quotes-jokes-container'>
+                    <div className='main-section__quotes-jokes-container--quotes'>
+                        <Quotes/>
+                    </div>
+                    
+                    <div className='main-section__quotes-jokes-container--jokes'>
+                        <Jokes/>
+                    </div>
                 </div>
+                
+                <div className='main-section__form-comments-container'>
+                    <div className='main-section__form-comments-container--form'>
+                        <CommentsForm/>
+                    </div>
+
+                    <div className='main-section__form-comments-container--comments'>
+                        <Comments/>
+                    </div>
+                </div>
+                
             </main>
         </>
     )

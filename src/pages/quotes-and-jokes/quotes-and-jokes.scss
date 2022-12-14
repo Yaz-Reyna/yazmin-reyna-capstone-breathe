@@ -4,6 +4,7 @@
 
 .main-section {
     padding: 1rem;
+    padding-top: 0;
 
     @include tablet {
         padding-left: 2rem;
@@ -11,7 +12,47 @@
     }
 
     @include desktop {
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    &__quotes-jokes-container {
+        @include tablet {
+        display: flex;
+        }
+
+        &--quotes{
+            @include tablet {
+            width: 50%;
+            }
+        }
+
+        &--jokes{
+            @include tablet {
+                width: 50%;
+                }
+        }
+    }
+
+    &__form-comments-container {
+        @include desktop {
+        display: flex;
+        }
+
+        @include desktop {
+            border-bottom: 1px solid $medium-pink;
+        }
+
+        &--form{
+            @include desktop {
+            width: 50%;
+            }
+        }
+
+        &--comments{
+            @include desktop {
+                width: 50%;
+                }
+        }
     }
 }

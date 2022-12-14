@@ -16,6 +16,10 @@
 
         &--title {
             @include section-title;
+
+            @include tablet {
+                height: 3.875rem;
+            }
         }
 
         &--button {
@@ -23,6 +27,7 @@
             font-size: 1rem;
             text-overflow: ellipsis;
             @include curved-top-button;
+            
             @media (text-overflow: ellipsis) {
                 font-size: .5rem;
             }

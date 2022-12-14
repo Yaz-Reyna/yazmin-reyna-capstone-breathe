@@ -17,6 +17,9 @@
 
         &--title {
             @include section-title;
+            @include tablet {
+                height: 3.875rem;
+            }
         }
 
         &--button {

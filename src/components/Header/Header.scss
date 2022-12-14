@@ -13,13 +13,14 @@
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
     @include desktop {
         padding-left: 6rem;
-        padding-right: 6rem;
+        padding-right: 2rem;
     }
 
     &__logo-link{
@@ -31,6 +32,11 @@
     &__logo{
         width: 10rem;
         height: 3rem;
+
+        @include tablet {
+            margin-top: .5rem;
+        }
+        
     }
 
     &__links-container {
