@@ -8,13 +8,43 @@
     flex-direction: column;
     align-content: center;
 
+    @include tablet {
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+
     &__title {
     @include section-title;
+    @include tablet {
+        margin-bottom: 3rem;
+        color: $dark-turquoise;
+        font-size: 2.5rem;
+    }
+    }
+
+    &__container{
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &--one-two {
+            @include tablet {
+                margin-right: 0;
+                width: 100%;
+                display: flex;
+                justify-self: center;
+
+            }
+        }
     }
 
     &__one {
         padding: 0;
         margin-bottom: 3rem;
+        @include tablet {
+            width: 50%;
+        }
     }
 
     &__three {

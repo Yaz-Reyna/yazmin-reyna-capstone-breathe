@@ -12,19 +12,29 @@ function BreathingExercises() {
             <Header/>
             <main className='main-breathing'>
             <h2 className="main-breathing__title">Click on any of the boxes!</h2>
-                <div className="main-breathing__one">
-                    <ExerciseOne/>
+            <div className="main-breathing__container">
+                <div className="main-breathing__container--one-two">
+                    <div className="main-breathing__one">
+                        <ExerciseOne/>
+                    </div>
+                    <div className="main-breathing__one">
+                        <ExerciseTwo/>
+                    </div>
                 </div>
-                <div className="main-breathing__one">
-                    <ExerciseTwo/>
-                </div>
-                <div className="main-breathing__one">
-                    <ExerciseThree/>
-                </div>
+                
+                <div className="main-breathing__container--one-two">
+                    <div className="main-breathing__one">
+                        <ExerciseThree/>
+                    </div>
 
-                <div className="main-breathing__one">
-                    <ExerciseFour/>
+                    <div className="main-breathing__one">
+                        <ExerciseFour/>
+                    </div>
                 </div>
+                
+            </div>
+            
+                
             </main>
         </>
     )

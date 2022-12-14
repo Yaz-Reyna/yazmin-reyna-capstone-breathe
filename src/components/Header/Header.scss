@@ -95,13 +95,6 @@
     }
 }
 
-.nav-bar__links-container--link:hover {
-    background-color: $gray;
-}
-
-.active {
-    color: $dark-turquoise;
-}
 
 .nav-bar__links-container--link {
     text-decoration: none;
@@ -122,7 +115,7 @@
 
 .nav-bar__links-container--link:before {
     content: '';
-    background: linear-gradient(45deg, $light-turquoise, $medium-turquoise,  $medium-pink, $light-pink);
+    background: linear-gradient(45deg, $light-turquoise,  $light-pink);
     position: absolute;
     top: -2px;
     left:-2px;
