@@ -11,13 +11,13 @@ function BreathingExercises() {
         <>
             <Header/>
             <main className='main-breathing'>
-            <h2 className="main-breathing__title">Click on any of the shapes!</h2>
+            <h2 className="main-breathing__title">Click on any of the boxes!</h2>
                 <div className="main-breathing__one">
                     <ExerciseOne/>
                 </div>
-                {/* <div>
+                <div className="main-breathing__one">
                     <ExerciseTwo/>
-                </div> */}
+                </div>
                 <div className="main-breathing__one">
                     <ExerciseThree/>
                 </div>

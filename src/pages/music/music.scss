@@ -1,0 +1,12 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.music {
+    background-image: url(../../assets/images/layered-waves.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100hw;
+
+}

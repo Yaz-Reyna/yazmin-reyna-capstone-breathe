@@ -28,11 +28,11 @@ $ease:ease-in-out;
     .breathe3__button--inhale__play-animation:after{
         position: absolute;
         top: 1rem;
-        left:45%;
+        left:40%;
         font-size: 1rem;
         color: $darkest-gray;
         content: "Inhale";
-        animation: text-grow 10s linear infinite;
+        animation: text-grow 10s ease-in-out infinite;
     }
 
     @keyframes text-grow {

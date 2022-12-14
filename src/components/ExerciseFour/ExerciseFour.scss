@@ -2,7 +2,6 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-
 .breathe4 {
     margin: 0;
     width: 100%;
@@ -12,91 +11,89 @@
 
     &__button {
         border: none;
-        border-radius: .625rem;
+        border-radius: 0.625rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 16rem;
         height: 25rem;
-        box-shadow: .25rem .25rem .5rem $dark-gray;
+        box-shadow: 0.25rem 0.25rem 0.5rem $dark-gray;
         background-color: $darkest-gray;
 
-        &__circle {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: none;
-            
+    &__circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border: none;
 
-            &--play-animation {
-                border: 10px solid #333;
-                animation: breath 8s ease-in-out infinite;
-            }
+        &--play-animation {
+            border: 10px solid $dark-turquoise;
+            box-shadow: 0.25rem 0.25rem 0.5rem $pink, 0.25rem 0.25rem  0.5rem $white;
+            animation: breath 8s ease-in-out infinite;
         }
+    }
 
         &__text {
-            font-size: 24px;
-            margin-top: 20px;
-            text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: center;
         }
     }
-
 }
-  
-  @keyframes breath {
+
+@keyframes breath {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}
 
-  .breathe4__button__text--play-animation:after{
+.breathe4__button__text--play-animation:after {
     animation: text-animation 8s ease-in-out infinite;
     content: "Breathe in";
     display: block;
     font-size: 1.5rem;
     font-weight: 600;
-    text-shadow: .25rem .25rem .5rem $white;
+    text-shadow: 0.25rem 0.25rem 0.5rem $white;
 }
 @keyframes text-animation {
-0%{
-    content: "Breathe in";
-    color: $dark-turquoise;
-    font-size: 1.5rem;
-}
-25%{
-    content: "Breathe in";
-    color: $dark-turquoise;
-    font-size: 2rem;
-}
-50%{
-    content: "Breathe in";
-    color: $dark-turquoise;
-    font-size: 3rem;
-}
+    0% {
+        content: "Breathe in";
+        color: $dark-gray;
+        font-size: 1.5rem;
+    }
+    25% {
+        content: "Breathe in";
+        color: $dark-gray;
+        font-size: 2rem;
+    }
+    50% {
+        content: "Breathe in";
+        color: $dark-gray;
+        font-size: 3rem;
+    }
 
-60%{
-    content: "Breathe out";
-    color: $dark-gray;
-    font-size: 2.5rem;
-}
+    60% {
+        content: "Breathe out";
+        color: $dark-gray;
+        font-size: 2.5rem;
+    }
 
-80%{
-    content: "Breathe out";
-    color: $dark-gray;
-    font-size: 2rem;
+    80% {
+        content: "Breathe out";
+        color: $dark-gray;
+        font-size: 2rem;
+    }
+    100% {
+        content: "Breathe out";
+        color: $dark-gray;
+        font-size: 1.4rem;
+    }
 }
-100%{
-    content: "Breathe out";
-    color: $dark-gray;
-    font-size: 1.4rem;
-}
-}
-
