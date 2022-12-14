@@ -44,9 +44,7 @@ function HomePage() {
                         </NavLink>
                     </div>
                 </div>
-
-            </div>
-            
+            </div>         
         </main>
     )
 }

@@ -57,7 +57,6 @@
 .breathe4__button__text--play-animation:after {
     animation: text-animation 8s ease-in-out infinite;
     content: "Breathe in";
-    display: block;
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 0.25rem 0.25rem 0.5rem $white;
@@ -71,28 +70,28 @@
     25% {
         content: "Breathe in";
         color: $dark-gray;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     50% {
         content: "Breathe in";
         color: $dark-gray;
-        font-size: 3rem;
+        font-size: 1.9rem;
     }
 
-    60% {
+    51% {
         content: "Breathe out";
         color: $dark-gray;
-        font-size: 2.5rem;
+        font-size: 1.9rem;
     }
 
-    80% {
+    75% {
         content: "Breathe out";
         color: $dark-gray;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     100% {
         content: "Breathe out";
         color: $dark-gray;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 }

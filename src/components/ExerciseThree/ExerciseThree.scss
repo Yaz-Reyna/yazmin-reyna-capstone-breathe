@@ -2,8 +2,7 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
-$duration:20s;
-$ease:ease-in-out;
+
 
 .breathe3{
     display: flex;
@@ -39,46 +38,35 @@ $ease:ease-in-out;
         0%{
             content: "Inhale";
             color: $dark-turquoise;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
         25%{
             content: "Inhale";
             color: $dark-turquoise;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
         50%{
             content: "Inhale";
             color: $dark-turquoise;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
 
-        55%{
+        51%{
             content: "Exhale";
             color: $dark-turquoise;
-            font-size: 1.3rem;
-        }
-
-        65%{
-            content: "Exhale";
-            color: $dark-gray;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
 
         75%{
             content: "Exhale";
-            color: $dark-gray;
-            font-size: 1.2rem;
+            color: $light-turquoise;
+            font-size: 1.4rem;
         }
 
-        80%{
-            content: "Exhale";
-            color: $dark-gray;
-            font-size: 1.1rem;
-        }
         100%{
             content: "Exhale";
-            color: $dark-gray;
-            font-size: 1rem;
+            color: $light-turquoise;
+            font-size: 1.3rem;
         }
     }
 
@@ -92,28 +80,30 @@ $ease:ease-in-out;
         
     }
 
-    @for $i from 1 through 16{
-        .circle:nth-child(#{$i}){
-            $size:0;
-            @if($i > 1){
-                $size:1rem * ($i - 1);
-                border:.5rem solid $pink;
-            }@else{
-                $size:1rem;
-                background:$pink;
-            }
-            border-bottom:none;
-            border-radius:$size $size 0 0;
-            width:$size;
-            height:$size / 2;
-            z-index: 16 - $i;
-            animation: circle-#{$i} $duration infinite $ease;
-            }
 
-        @keyframes circle-#{$i}{
-            0%{transform:translateX(-50%) rotate(0deg);}
-            100%{transform:translateX(-50%) rotate(-($i * 360deg));}
+
+        @for $i from 1 through 16{
+            .circle:nth-child(#{$i}){
+                $size:0;
+                @if($i > 1){
+                    $size:1rem * ($i - 1);
+                    border:.5rem solid $pink;
+                }@else{
+                    $size:1rem;
+                    background:$pink;
+                }
+                border-bottom:none;
+                border-radius:$size $size 0 0;
+                width:$size;
+                height: $size / 2 ;
+                z-index: 16 - $i;
+                animation: circle-#{$i} 10s infinite ease-in-out;
+                }
+
+            @keyframes circle-#{$i}{
+                0%{transform:translateX(-50%) rotate(0deg);}
+                100%{transform:translateX(-50%) rotate(-($i * 360deg));}
+            }
         }
     }
-}
 }
