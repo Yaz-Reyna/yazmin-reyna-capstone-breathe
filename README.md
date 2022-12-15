@@ -6,6 +6,7 @@
 Breathe is an app that helps you take a quick break with jokes, inspirational quotes, and guided breathing exercises. It's perfect for those moments when you need to relax but don't have much time. With Breathe, you can take a deep breath and let the stress melt away. So checkout Breathe now and start de-stressing in no time!
 
 # Dependencies
+git add
 react: The core React library
 react-dom: The React DOM library
 react-router: The React Router library for routing
