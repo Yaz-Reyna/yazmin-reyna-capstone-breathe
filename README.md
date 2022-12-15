@@ -100,3 +100,5 @@ Explore the potential for personalization, such as providing relaxation tips bas
 Continue to improve the user experience and design of the app.
 
 We hope to continue improving and expanding the app to provide an even more fulfilling and transformative experience for our users.
+
+Add a contact page
