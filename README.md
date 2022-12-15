@@ -1,6 +1,23 @@
+
+# Please refer to README.md file in breathe-server before so you can populate the databases prior to starting the app. 
+
+# About Breathe
+
+Breathe is an app that helps you take a quick break with jokes, inspirational quotes, and guided breathing exercises. It's perfect for those moments when you need to relax but don't have much time. With Breathe, you can take a deep breath and let the stress melt away. So checkout Breathe now and start de-stressing in no time!
+
+# Dependencies
+react: The core React library
+react-dom: The React DOM library
+react-router: The React Router library for routing
+axios: The Axios library for making HTTP requests
+sass: The Sass library for styling
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## `npm install`
+Install the required dependencies by running npm install in your terminal.
 
 ## Available Scripts
 
@@ -68,3 +85,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Next Steps
+
+Add relaxing music and nature sounds to enhance the meditation experience.
+
+Include short guided meditations to provide additional guidance and support.
+
+Add tips for creating the best environment for relaxation at home, including suggestions for lighting, aromas, and other elements.
+
+Explore the potential for personalization, such as providing relaxation tips based on the user's mood.
+
+Continue to improve the user experience and design of the app.
+
+We hope to continue improving and expanding the app to provide an even more fulfilling and transformative experience for our users.
